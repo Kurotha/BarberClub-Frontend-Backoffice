@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #0b0c0e;
+  color: #f3f4f6;
+  line-height: 1.5;
+}
+
+.topbar {
+  background: #13151a;
+  border-bottom: 1px solid #222630;
+  padding: 1rem 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #eab32e;
+  letter-spacing: 0.5px;
+}
+
+.role-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #1a1d24;
+  color: #d1d5db;
+  border: 1px solid #2a2e3a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tab-btn.active {
+  background: #eab32e;
+  color: #0b0c0e;
+  font-weight: 700;
+  border-color: #eab32e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kpi-card {
+  background: #13151a;
+  border: 1px solid #222630;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+.kpi-label {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kpi-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0.25rem;
+}
+
+.panel {
+  background: #13151a;
+  border: 1px solid #222630;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid #222630;
+}
+
+th {
+  color: #9ca3af;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.badge-PENDIENTE { background: rgba(234, 179, 46, 0.2); color: #eab32e; }
+.badge-CONFIRMADA { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.badge-ATENDIDA { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.badge-CANCELADA { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+.btn {
+  border: none;
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-gold { background: #eab32e; color: #0b0c0e; }
+.btn-blue { background: #2563eb; color: #ffffff; }
+.btn-green { background: #16a34a; color: #ffffff; }
+.btn-red { background: #dc2626; color: #ffffff; }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 0.58rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #2e3340;
+  background: #0b0c0e;
+  color: #ffffff;
+  font-size: 0.88rem;
+}
